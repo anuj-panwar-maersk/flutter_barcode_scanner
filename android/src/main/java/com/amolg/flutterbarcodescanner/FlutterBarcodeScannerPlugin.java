@@ -246,7 +246,7 @@ public class FlutterBarcodeScannerPlugin implements MethodCallHandler, ActivityR
             final ActivityPluginBinding activityBinding) {
 
 
-        this.activity = (FlutterActivity) activity;
+        this.activity = (FlutterFragmentActivity) activity;
         eventChannel =
                 new EventChannel(messenger, "flutter_barcode_scanner_receiver");
         eventChannel.setStreamHandler(this);
